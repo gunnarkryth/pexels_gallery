@@ -4,7 +4,6 @@ header {
   justify-content: center;
   margin: 0;
   padding: 0;
-  height: 19vh;
 }
 @media (max-width: 600px) {
   header {
@@ -13,11 +12,14 @@ header {
 }
 header h1 {
   margin: 0;
+  margin-top: -1vh;
+  margin-bottom: 5vh;
   padding: 0;
   font-style: normal;
   font-weight: 300;
   font-family: "Playwrite NL", cursive;
   font-optical-sizing: auto;
+  font-size: 5vh;
   text-align: center;
 }
 
@@ -50,20 +52,6 @@ body {
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
-}
-#image_grid figure:hover {
-  position: relative;
-  scale: 110%;
-  transition: 300ms;
-  margin-bottom: 2.13rem;
-}
-#image_grid figure:hover figcaption {
-  position: absolute;
-  top: 0;
-  mix-blend-mode: difference;
-  transition: 300ms;
-  padding: 0.5rem;
-  color: white;
 }
 #image_grid figure img {
   opacity: 0;

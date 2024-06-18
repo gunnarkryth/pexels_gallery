@@ -11,20 +11,6 @@
       margin: 0;
       margin-bottom: 1rem;
       padding: 0;
-      &:hover {
-        position: relative;
-        scale: 110%;
-        transition: $delay;
-        margin-bottom: 2.13rem;
-        & figcaption {
-          position: absolute;
-          top: 0;
-          mix-blend-mode: difference;
-          transition: $delay;
-          padding: 0.5rem;
-          color: white;
-        }
-      }
     }
     & img {
       & {
