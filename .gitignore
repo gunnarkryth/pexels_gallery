@@ -1,0 +1,5 @@
+# API keys directory
+api_keys/
+
+# Logs
+.log
