@@ -23,6 +23,7 @@ header h1 {
 
 body {
   margin: 0 10vw;
+  scroll-behavior: smooth;
 }
 @media (max-width: 600px) {
   body {
@@ -42,7 +43,11 @@ body {
          column-count: 2;
   }
 }
-#image_grid img {
+#image_grid figure {
+  margin: 0;
+  padding: 0;
+}
+#image_grid figure img {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   opacity: 0;
@@ -51,7 +56,11 @@ body {
   border-radius: 5px;
   width: 100%;
 }
-#image_grid img.loaded {
+#image_grid figure img.loaded {
   opacity: 1;
   transition: opacity 1s ease-in-out;
+}
+#image_grid figure figcaption {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
