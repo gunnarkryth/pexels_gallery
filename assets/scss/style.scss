@@ -7,6 +7,9 @@ header {
     margin: 0;
     padding: 0;
     height: 19vh;
+    @media (max-width: 500px) {
+      height: 10vh;
+    }
   }
   h1 {
     margin: 0;
