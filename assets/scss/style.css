@@ -61,6 +61,7 @@ body {
   position: absolute;
   mix-blend-mode: difference;
   transition: 300ms;
+  padding: 0.5rem;
   color: white;
 }
 #image_grid figure img {
