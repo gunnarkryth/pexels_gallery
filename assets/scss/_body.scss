@@ -1,6 +1,7 @@
 body {
   margin: 0 10vw;
   scroll-behavior: smooth;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   @media (max-width: $phone) {
     margin: 1rem;
   }
