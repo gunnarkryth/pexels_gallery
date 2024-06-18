@@ -6,8 +6,7 @@
   }
   figure {
     & {
-      display: grid;
-      grid-template-rows: auto;
+      break-inside: avoid;
       transition: $delay;
       margin: 0;
       margin-bottom: 1rem;
@@ -19,6 +18,7 @@
         margin-bottom: 2.13rem;
         & figcaption {
           position: absolute;
+          top: 0;
           mix-blend-mode: difference;
           transition: $delay;
           padding: 0.5rem;
@@ -28,7 +28,6 @@
     }
     & img {
       & {
-        break-inside: avoid;
         opacity: 0;
         transition: opacity $delay ease-in-out;
         border-radius: 5px;
@@ -42,7 +41,6 @@
     figcaption {
       transition: $delay;
       margin: 0;
-      padding: 0;
       padding: 0 0.5rem;
     }
   }

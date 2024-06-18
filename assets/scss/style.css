@@ -44,8 +44,8 @@ body {
   }
 }
 #image_grid figure {
-  display: grid;
-  grid-template-rows: auto;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
   transition: 300ms;
   margin: 0;
   margin-bottom: 1rem;
@@ -59,14 +59,13 @@ body {
 }
 #image_grid figure:hover figcaption {
   position: absolute;
+  top: 0;
   mix-blend-mode: difference;
   transition: 300ms;
   padding: 0.5rem;
   color: white;
 }
 #image_grid figure img {
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
   border-radius: 5px;
@@ -79,6 +78,5 @@ body {
 #image_grid figure figcaption {
   transition: 300ms;
   margin: 0;
-  padding: 0;
   padding: 0 0.5rem;
 }/*# sourceMappingURL=style.css.map */
