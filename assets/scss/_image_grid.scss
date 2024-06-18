@@ -6,26 +6,43 @@
   }
   figure {
     & {
+      display: grid;
+      grid-template-rows: auto;
+      transition: $delay;
       margin: 0;
+      margin-bottom: 1rem;
       padding: 0;
+      &:hover {
+        position: relative;
+        scale: 110%;
+        transition: $delay;
+        margin-bottom: 2.13rem;
+        & figcaption {
+          position: absolute;
+          mix-blend-mode: difference;
+          transition: $delay;
+          color: white;
+        }
+      }
     }
-    img {
+    & img {
       & {
         break-inside: avoid;
         opacity: 0;
-        transition: opacity 1s ease-in-out;
-        margin-bottom: 1rem;
+        transition: opacity $delay ease-in-out;
         border-radius: 5px;
         width: 100%;
       }
       &.loaded {
         opacity: 1;
-        transition: opacity 1s ease-in-out;
+        transition: opacity $delay ease-in-out;
       }
     }
     figcaption {
+      transition: $delay;
       margin: 0;
       padding: 0;
+      padding: 0 0.5rem;
     }
   }
 }
