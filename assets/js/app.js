@@ -1,7 +1,8 @@
 import { api_key } from "./env.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const api_url = "https://api.pexels.com/v1/search?query=nature&per_page=50&size=small";
+  const api_url =
+    "https://api.pexels.com/v1/search?query=nature&per_page=15&size=small";
   const image_grid = document.getElementById("image_grid");
 
   fetch(api_url, {
