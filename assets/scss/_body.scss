@@ -1,0 +1,6 @@
+body {
+    margin: 0 10vw;
+    @media (max-width: $phone) {
+      margin: 1rem;
+    }
+  }

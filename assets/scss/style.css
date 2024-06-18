@@ -6,7 +6,7 @@ header {
   padding: 0;
   height: 19vh;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
     height: 13vh;
   }
@@ -24,7 +24,7 @@ header h1 {
 body {
   margin: 0 10vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
     margin: 1rem;
   }
@@ -36,7 +36,7 @@ body {
   -moz-column-count: 4;
        column-count: 4;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #image_grid {
     -moz-column-count: 2;
          column-count: 2;
